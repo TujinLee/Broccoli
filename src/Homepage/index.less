@@ -1,0 +1,86 @@
+.container {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+
+    .header {
+        height: 50px;
+        border-bottom: 1px solid;
+
+        .title {
+            line-height: 48px;
+            padding-left: 20px;
+            font-size: 16px;
+        }
+    }
+
+    .middle {
+        flex: 1;
+        overflow: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        .content {
+            width: 80%;
+
+            .big {
+                font-size: 36px;
+            }
+
+            .small {
+                font-size: 14px;
+                margin: 1.5em 0;
+            }
+
+            .launch {
+                border: 1px solid;
+                padding: 10px;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .footer {
+        height: 50px;
+        text-align: center;
+        font-size: 14px;
+        border-top: 1px solid;
+    }
+
+    .formTitle {
+        font-style: italic;
+        text-align: center;
+        margin-bottom: 2em;
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: -50%;
+            left: 50%;
+            width: 30px;
+            height: 2px;
+            background: black;
+            transform: translateX(-50%);
+        }
+    }
+
+    .tips {
+        text-align: center;
+    }
+
+    .formBtn {
+        border: 1px solid;
+        padding: 10px;
+        cursor: pointer;
+        text-align: center;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .resForm {
+        width: 40vw;
+    }
+}
